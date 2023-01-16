@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+.features {
+
+    background-color: $third-color;
+    text-align: center;
+    padding: 3rem;
+
+    p {
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+    & > p {
+        padding: 0 10rem;
+    }
+
+    .feature_description {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3rem;
+
+        .feature_detail {
+            width: 30%;
+
+            img {
+                width: 10rem;
+                border-radius: 50%;
+            }
+
+            h5 {
+                padding: 0.8rem;
+                font-weight: 700;
+            }
+
+            p {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet-windows-size) {
+        p {
+            font-size: 1rem;
+        }
+        
+        & > p {
+            padding: 0 3rem;
+        }
+
+        .feature_description {
+            .feature_detail {
+                img {
+                    width: 8rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $smartphone-window-size) {
+        
+        h5 {
+            font-size: 2rem;
+        }
+
+        & > p {
+            padding: 0;
+        }
+        
+        .feature_description {
+            flex-direction: column;
+
+            .feature_detail {
+                width: auto;
+                img {
+                    width: 50%;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
