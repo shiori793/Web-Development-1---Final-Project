@@ -11,3 +11,14 @@ $tablet-windows-size: 1007px;
 $laptop-font-size: 20px;
 $tablet-font-size: 18px;
 $smartphone-font-size: 16px;
+
+:root {
+    font-family: $secondary-font;
+    font-size: $laptop-font-size;
+    @media screen and (max-width: $tablet-windows-size) {
+        font-size: $tablet-font-size;
+    }
+    @media screen and (max-width: $smartphone-window-size) {
+        font-size: $smartphone-font-size;
+    }
+}
