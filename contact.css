@@ -13,15 +13,21 @@
   }
 }
 
+.contact {
+  height: 75vh;
+}
 .contact h2 {
   width: 100%;
+  height: 5vh;
+  margin: 0;
   text-align: center;
-  margin-bottom: 3rem;
+  align-items: center;
+  font-weight: bold;
 }
 .contact .contact-us {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .contact .contact-us form {
   flex-basis: 40%;
@@ -33,7 +39,7 @@
 }
 .contact .contact-us form .contact-us-item {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   white-space: nowrap;
 }
 .contact .contact-us form input, .contact .contact-us form textarea {
@@ -54,15 +60,24 @@
   height: 7rem;
 }
 .contact .contact-us form button {
-  width: 5rem;
+  width: 10rem;
+  height: 5rem;
   background-color: #CCD5AE;
+  font-size: 1.5rem;
+  color: #FEFAE0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .contact .contact-us .info {
   flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 60vh;
   padding: 2rem;
 }
 .contact .contact-us .info .contact-details {
+  flex-basis: 20%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -79,5 +94,37 @@
   width: 3rem;
   height: 3rem;
   font-size: 1.5rem;
+}
+.contact .contact-us .info .map {
+  flex-basis: 80%;
+}
+.contact .contact-us .info .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact .social-media {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #CCD5AE;
+}
+.contact .social-media p {
+  font-size: 1.5rem;
+  color: #FEFAE0;
+  margin: 0;
+}
+.contact .social-media-links {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .social-media-links i {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: #FEFAE0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=contact.css.map */
