@@ -1,0 +1,115 @@
+@use 'variables.scss' as v;
+
+.contact {
+    height: 100vh;
+    h2 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    .contact-us {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        form {
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 3rem;
+            .contact-us-item {
+                width: 100%;
+                margin-bottom: 1.5rem;
+                white-space: nowrap;
+            }
+            input, textarea {
+                width: calc(100% - 3rem);
+                border: none;
+                border-bottom: solid 1px;
+            }
+            i {
+                width: 3rem;
+                height: 3rem;
+                font-size: 2rem;
+            }
+            input {
+                height: 5rem;
+            }
+            textarea {
+                margin-left: 3rem;
+                height: 7rem;
+            }
+            button {
+                width: 10rem;
+                height: 3rem;
+                background-color: v.$primary-color;
+                font-size: 1.5rem;
+                color: v.$third-color;
+                border: none;
+                box-shadow: 0 0 10px rgba(0,0,0,.3);
+            }
+        }
+        .info {
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 70vh;
+            padding: 2rem;
+            .contact-details {
+                flex-basis: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                &-item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    white-space: nowrap;
+                    i {
+                        width: 3rem;
+                        height: 3rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .map {
+                flex-basis: 90%;
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .social-media {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: v.$primary-color;
+        p {
+            font-size: 1.5rem;
+            color: v.$third-color;
+            margin: 0;
+        }
+        &-links {
+            width: 15vw;
+            display: flex;
+            justify-content: space-between;
+            i {
+                width: 2rem;
+                height: 2rem;
+                font-size: 1.5rem;
+                color: v.$third-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
