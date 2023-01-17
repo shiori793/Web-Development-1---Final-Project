@@ -20,15 +20,27 @@
             flex-direction: column;
             align-items: center;
             padding: 1rem;
-            .contact-us-item {
+            label {
                 width: 100%;
                 margin-bottom: 1.5rem;
                 white-space: nowrap;
+                &:hover {
+                    color: v.$primary-color;
+                    transition: all 0.5s;
+                }
             }
             input, textarea {
                 width: calc(100% - 3rem);
                 border: none;
-                border-bottom: solid 1px;
+                border-bottom: solid 2px;
+            }
+            input:hover, textarea:hover {
+                border-bottom: solid 2px v.$primary-color;
+            }
+            input:focus, textarea:focus {
+                border-bottom: none;
+                outline: solid 2px v.$primary-color;
+                border-radius: 5px;
             }
             i {
                 width: 3rem;
@@ -43,12 +55,7 @@
                 height: 5rem;
             }
             button {
-                width: 8rem;
-                height: 2rem;
-                background-color: v.$primary-color;
-                color: v.$third-color;
-                border: none;
-                box-shadow: 0 0 10px rgba(0,0,0,.3);
+                @extend %button;
             }
         }
         .info {
@@ -66,15 +73,8 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
                 @media screen and (max-width: v.$tablet-windows-size) {
                     flex-direction: column;
-                }
-                &-for-sp {
-                    display: flex;
-                    @media screen and (max-width: v.$smartphone-window-size) {
-                        flex-direction: column;
-                    }
                 }
                 &-item {
                     display: flex;
@@ -91,6 +91,15 @@
                     p {
                         font-size: 0.7rem;
                         margin: 0 1rem 0 0.5rem;
+                        @media screen and (max-width: v.$tablet-windows-size) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &-for-sp {
+                    display: flex;
+                    @media screen and (max-width: v.$smartphone-window-size) {
+                        flex-direction: column;
                     }
                 }
             }
@@ -107,7 +116,6 @@
         }
     }
     .social-media {
-        width: 100vw;
         height: 10vh;
         display: flex;
         justify-content: space-around;
@@ -132,6 +140,10 @@
                 height: 1.5rem;
                 color: v.$third-color;
                 cursor: pointer;
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                    transition: all 0.5s;
+                }
             }
         }
     }

@@ -9,8 +9,8 @@
         <link href="css/header.css" rel="stylesheet">
         <link href="css/features.css" rel="stylesheet">
         <link href="css/menu.css" rel="stylesheet">
+        <link href="/css/contact.css" rel="stylesheet" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/css/contact.css">
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -121,23 +121,23 @@
                 <h1>Contact us</h1>
                 <div class="contact-us">
                     <form action="submit">
-                        <label for="contact-us-name" class="contact-us-item">
+                        <label for="contact-us-name">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" id="contact-us-name" name="contact-us-name" placeholder="Your name">
+                            <input type="text" id="contact-us-name" name="contact-us-name" placeholder="Your name" required="required">
                         </label>
 
-                        <label for="contact-us-email" class="contact-us-item">
+                        <label for="contact-us-email">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="text" id="contact-us-email" name="contact-us-email" placeholder="Your email">
+                            <input type="text" id="contact-us-email" name="contact-us-email" placeholder="Your email" required="required">
                         </label>
 
-                        <label for="contact-us-subject" class="contact-us-item">
+                        <label for="contact-us-subject">
                             <i class="fa-solid fa-tag"></i>
-                            <input type="text" id="contact-us-subject" name="contact-us-subject" placeholder="Subject">
+                            <input type="text" id="contact-us-subject" name="contact-us-subject" placeholder="Subject" required=""required>
                         </label>
 
-                        <label for="contact-us-message" class="contact-us-item">
-                            <textarea id="contact-us-message" name="contact-us-message" placeholder="Your message"></textarea>
+                        <label for="contact-us-message">
+                            <textarea id="contact-us-message" name="contact-us-message" placeholder="Your message" required="input"></textarea>
                         </label>
                         <button type="submit">SEND</button>
                     </form>

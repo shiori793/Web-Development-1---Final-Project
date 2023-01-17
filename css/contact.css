@@ -28,6 +28,22 @@ header {
   }
 }
 
+.contact .contact-us form button {
+  border: none;
+  width: 8rem;
+  height: 2rem;
+  color: #FEFAE0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #CCD5AE;
+  cursor: pointer;
+}
+.contact .contact-us form button:hover {
+  border: solid 3px #CCD5AE;
+  color: #CCD5AE;
+  background-color: #FEFAE0;
+  transition: all 0.5s;
+}
+
 .contact {
   height: 100vh;
   padding: 3rem 0;
@@ -53,15 +69,27 @@ header {
   align-items: center;
   padding: 1rem;
 }
-.contact .contact-us form .contact-us-item {
+.contact .contact-us form label {
   width: 100%;
   margin-bottom: 1.5rem;
   white-space: nowrap;
 }
+.contact .contact-us form label:hover {
+  color: #CCD5AE;
+  transition: all 0.5s;
+}
 .contact .contact-us form input, .contact .contact-us form textarea {
   width: calc(100% - 3rem);
   border: none;
-  border-bottom: solid 1px;
+  border-bottom: solid 2px;
+}
+.contact .contact-us form input:hover, .contact .contact-us form textarea:hover {
+  border-bottom: solid 2px #CCD5AE;
+}
+.contact .contact-us form input:focus, .contact .contact-us form textarea:focus {
+  border-bottom: none;
+  outline: solid 2px #CCD5AE;
+  border-radius: 5px;
 }
 .contact .contact-us form i {
   width: 3rem;
@@ -74,14 +102,6 @@ header {
 .contact .contact-us form textarea {
   margin-left: 3rem;
   height: 5rem;
-}
-.contact .contact-us form button {
-  width: 8rem;
-  height: 2rem;
-  background-color: #CCD5AE;
-  color: #FEFAE0;
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .contact .contact-us .info {
   flex-basis: 60%;
@@ -99,18 +119,9 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 @media screen and (max-width: 1007px) {
   .contact .contact-us .info .contact-details {
-    flex-direction: column;
-  }
-}
-.contact .contact-us .info .contact-details-for-sp {
-  display: flex;
-}
-@media screen and (max-width: 640px) {
-  .contact .contact-us .info .contact-details-for-sp {
     flex-direction: column;
   }
 }
@@ -133,6 +144,19 @@ header {
   font-size: 0.7rem;
   margin: 0 1rem 0 0.5rem;
 }
+@media screen and (max-width: 1007px) {
+  .contact .contact-us .info .contact-details-item p {
+    font-size: 1rem;
+  }
+}
+.contact .contact-us .info .contact-details-for-sp {
+  display: flex;
+}
+@media screen and (max-width: 640px) {
+  .contact .contact-us .info .contact-details-for-sp {
+    flex-direction: column;
+  }
+}
 .contact .contact-us .info .map {
   flex-basis: 90%;
 }
@@ -146,7 +170,6 @@ header {
   }
 }
 .contact .social-media {
-  width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-around;
@@ -177,5 +200,9 @@ header {
   height: 1.5rem;
   color: #FEFAE0;
   cursor: pointer;
+}
+.contact .social-media-links i:hover {
+  transform: scale(1.5, 1.5);
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=contact.css.map */
