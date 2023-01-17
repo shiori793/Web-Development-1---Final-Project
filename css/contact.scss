@@ -1,34 +1,46 @@
-@use 'variables.scss' as v;
+@use './variables.scss' as v;
 
 .contact {
     height: 100vh;
-    h2 {
-        width: 100%;
-        margin: 0;
+    padding: 3rem 0;
+    h1 {
         text-align: center;
         align-items: center;
-        font-weight: bold;
     }
     .contact-us {
         width: 100%;
         display: flex;
-        align-items: center;
+        padding: 0 3rem;
+        @media screen and (max-width: v.$tablet-windows-size) {
+            flex-direction: column;
+        }
         form {
             flex-basis: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            padding: 3rem;
-            .contact-us-item {
+            padding: 1rem;
+            label {
                 width: 100%;
                 margin-bottom: 1.5rem;
                 white-space: nowrap;
+                &:hover {
+                    color: v.$primary-color;
+                    transition: all 0.5s;
+                }
             }
             input, textarea {
                 width: calc(100% - 3rem);
                 border: none;
-                border-bottom: solid 1px;
+                border-bottom: solid 2px;
+            }
+            input:hover, textarea:hover {
+                border-bottom: solid 2px v.$primary-color;
+            }
+            input:focus, textarea:focus {
+                border-bottom: none;
+                outline: solid 2px v.$primary-color;
+                border-radius: 5px;
             }
             i {
                 width: 3rem;
@@ -36,20 +48,14 @@
                 font-size: 2rem;
             }
             input {
-                height: 5rem;
+                height: 3rem;
             }
             textarea {
                 margin-left: 3rem;
-                height: 7rem;
+                height: 5rem;
             }
             button {
-                width: 10rem;
-                height: 3rem;
-                background-color: v.$primary-color;
-                font-size: 1.5rem;
-                color: v.$third-color;
-                border: none;
-                box-shadow: 0 0 10px rgba(0,0,0,.3);
+                @extend %button;
             }
         }
         .info {
@@ -58,23 +64,42 @@
             flex-direction: column;
             width: 100%;
             height: 70vh;
-            padding: 2rem;
+            padding: 1rem;
+            justify-content: space-between;
             .contact-details {
                 flex-basis: 10%;
                 width: 100%;
+                height: 3rem;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
+                @media screen and (max-width: v.$tablet-windows-size) {
+                    flex-direction: column;
+                }
                 &-item {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     white-space: nowrap;
+                    @media screen and (max-width: v.$tablet-windows-size) {
+                        margin-bottom: 1rem;
+                    }
                     i {
-                        width: 3rem;
-                        height: 3rem;
-                        font-size: 1.5rem;
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                    p {
+                        font-size: 0.7rem;
+                        margin: 0 1rem 0 0.5rem;
+                        @media screen and (max-width: v.$tablet-windows-size) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &-for-sp {
+                    display: flex;
+                    @media screen and (max-width: v.$smartphone-window-size) {
+                        flex-direction: column;
                     }
                 }
             }
@@ -83,32 +108,42 @@
                 iframe {
                     width: 100%;
                     height: 100%;
+                    @media screen and (max-width: v.$tablet-windows-size) {
+                        height: 45vh;
+                    }
                 }
             }
         }
     }
     .social-media {
-        width: 100%;
         height: 10vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: v.$primary-color;
+        @media screen and (max-width: v.$smartphone-window-size) {
+            flex-direction: column;
+        }
         p {
-            font-size: 1.5rem;
             color: v.$third-color;
             margin: 0;
         }
         &-links {
-            width: 15vw;
+            width: 20vw;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            @media screen and (max-width: v.$smartphone-window-size) {
+                width: 50vw;
+            }
             i {
-                width: 2rem;
-                height: 2rem;
-                font-size: 1.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 color: v.$third-color;
                 cursor: pointer;
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                    transition: all 0.5s;
+                }
             }
         }
     }
