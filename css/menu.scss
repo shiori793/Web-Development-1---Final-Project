@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+.menu {
+
+    background-color: $secondary-color;
+    text-align: center;
+    padding: 3rem;
+
+    p {
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+    .menu_cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3rem 0;
+
+        .menu_full_width, .menu_half_width {
+            
+            width: 30%;
+            margin: 1rem 0;
+            padding: 0.5rem;
+
+            img {
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
+            }
+
+            h5 {
+                margin: 1rem auto;
+            }
+        }
+
+        @media screen and (max-width: $tablet-windows-size) {
+            .menu_half_width {
+                width: 50%;
+            }
+            .menu_full_width {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: $smartphone-window-size) {
+            .menu_full_width, .menu_half_width {
+                width: 100%;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
