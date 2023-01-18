@@ -1,5 +1,5 @@
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -30,7 +30,7 @@
 }
 
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -87,13 +87,13 @@ header .navbar-nav {
   width: 80%;
 }
 #header-mainVisual .header-title h1 {
-  font-family: sans-serif;
+  font-family: "Zen Kurenaido";
   color: #FEFAE0;
   margin: 0 0 0.5em 0;
   letter-spacing: 1.5rem;
 }
 #header-mainVisual p {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   color: #FEFAE0;
 }
 
@@ -111,7 +111,7 @@ header .navbar-nav {
   }
 }
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -147,12 +147,12 @@ header .navbar-nav {
   padding: 3rem;
 }
 .features h1, .features h5 {
-  font-family: sans-serif;
+  font-family: "Zen Kurenaido";
 }
 .features p {
   color: gray;
   font-size: 0.8rem;
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
 }
 .features > p {
   padding: 0 10rem;
@@ -208,7 +208,7 @@ header .navbar-nav {
 }
 
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -244,12 +244,12 @@ header .navbar-nav {
   padding: 3rem;
 }
 .menu h1, .menu h5 {
-  font-family: sans-serif;
+  font-family: "Zen Kurenaido";
 }
 .menu p {
   color: gray;
   font-size: 0.8rem;
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
 }
 .menu .menu_cards {
   display: flex;
@@ -290,7 +290,7 @@ header .navbar-nav {
 }
 
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -399,7 +399,7 @@ header .navbar-nav {
   }
 }
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -430,10 +430,12 @@ header .navbar-nav {
 }
 
 .contact {
+  font-family: "Yuji Syuku";
   background-color: #FEFAE0;
   padding: 3rem 0 0 0;
 }
 .contact h1 {
+  font-family: "Zen Kurenaido";
   text-align: center;
   align-items: center;
 }
@@ -463,19 +465,8 @@ header .navbar-nav {
   color: #CCD5AE;
   transition: all 0.5s;
 }
-.contact .contact-us form input, .contact .contact-us form textarea {
-  width: calc(100% - 3rem);
-  border: none;
-  border-bottom: solid 2px;
-  background-color: #FEFAE0;
-}
-.contact .contact-us form input:hover, .contact .contact-us form textarea:hover {
-  border-bottom: solid 2px #CCD5AE;
-}
-.contact .contact-us form input:focus, .contact .contact-us form textarea:focus {
-  border-bottom: none;
-  outline: solid 2px #CCD5AE;
-  border-radius: 5px;
+.contact .contact-us form label:focus {
+  color: #CCD5AE;
 }
 .contact .contact-us form i {
   width: 3rem;
@@ -483,12 +474,57 @@ header .navbar-nav {
   font-size: 2rem;
 }
 .contact .contact-us form input {
+  width: calc(100% - 3rem);
+  border: none;
+  border-bottom: solid 2px;
+  background-color: #FEFAE0;
   height: 3rem;
 }
+.contact .contact-us form input:hover {
+  border-bottom: solid 2px #CCD5AE;
+  transition: all 0.5s;
+}
+.contact .contact-us form input:focus {
+  border-bottom: solid 2px #CCD5AE;
+  outline: none;
+}
+.contact .contact-us form input:focus::-moz-placeholder {
+  color: #CCD5AE;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact .contact-us form input:focus::placeholder {
+  color: #CCD5AE;
+  transition: all 0.5s;
+}
 .contact .contact-us form textarea {
+  width: calc(100% - 3rem);
+  border: none;
+  border-bottom: solid 2px;
+  background-color: #FEFAE0;
   margin-left: 3rem;
   height: 5rem;
   resize: none;
+}
+.contact .contact-us form textarea:hover {
+  border-bottom: solid 2px #CCD5AE;
+  transition: all 0.5s;
+}
+.contact .contact-us form textarea:focus {
+  border-bottom: solid 2px #CCD5AE;
+  outline: solid 2px #CCD5AE;
+  border-bottom: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.contact .contact-us form textarea:focus::-moz-placeholder {
+  color: #CCD5AE;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact .contact-us form textarea:focus::placeholder {
+  color: #CCD5AE;
+  transition: all 0.5s;
 }
 .contact .contact-us .info {
   flex-basis: 60%;
@@ -529,13 +565,8 @@ header .navbar-nav {
   height: 1rem;
 }
 .contact .contact-us .info .contact-details-item p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin: 0 1rem 0 0.5rem;
-}
-@media screen and (max-width: 1007px) {
-  .contact .contact-us .info .contact-details-item p {
-    font-size: 1rem;
-  }
 }
 .contact .contact-us .info .contact-details-for-sp {
   display: flex;
@@ -594,8 +625,9 @@ header .navbar-nav {
   }
 }
 .contact .social-media-links i {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
   color: #FEFAE0;
   cursor: pointer;
 }
@@ -605,7 +637,7 @@ header .navbar-nav {
 }
 
 :root {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -641,7 +673,7 @@ footer {
   padding: 0;
 }
 footer * {
-  font-family: sans-serif;
+  font-family: "Yuji Syuku";
 }
 footer .footer_contents {
   display: flex;
