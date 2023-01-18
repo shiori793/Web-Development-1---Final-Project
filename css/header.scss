@@ -1,15 +1,6 @@
 @import "variables.scss";
 
 header {
-  .navbar-dark{
-    background-color: $primary-color;
-      .navbar-brand{
-        padding: 0 0 0.2rem 0;
-      }
-  }
-}
-
-#header-mainVisual {
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../image/header/mainVisual-matcha.jpg);
   max-width: 100%;
   background-position: center;
@@ -19,6 +10,18 @@ header {
   padding: 5rem;
   text-align: center;
   padding: 15rem 0;
+  .navbar-dark{
+    background-color: $primary-color;
+      .navbar-brand{
+        padding: 0 0 0.2rem 0;
+      }
+  }
+    .navbar-nav{
+      text-align: left;
+    }
+}
+
+#header-mainVisual {
     .header-title{
       margin: 0 auto 1.5rem auto;
       border-bottom: solid 1px $primary-color;
@@ -34,4 +37,22 @@ header {
       font-family: $secondary-font;
       color: $third-color;
     }
+}
+
+
+@media screen and (max-width: $tablet-windows-size) {
+  .header-title {
+    width: 10px;
+      h1 {
+        font-size: 1.5rem;
+      }
+  }
+}
+
+@media screen and (max-width: $smartphone-window-size) {
+  .header-title {
+    h1 {
+      font-size: 0.3rem;
+    }
+  }
 }
