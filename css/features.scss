@@ -6,9 +6,14 @@
     text-align: center;
     padding: 3rem;
 
+    h1, h5 {
+        font-family: $primary-font;
+    }
+
     p {
         color: gray;
         font-size: 0.8rem;
+        font-family: $secondary-font;
     }
 
     & > p {
