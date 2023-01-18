@@ -1,8 +1,5 @@
-@import "./variables.scss";
-
 .menu {
 
-    // background-color: $secondary-color;
     background-color: $third-color;
     text-align: center;
     padding: 3rem;
@@ -28,7 +25,6 @@
             
             width: 30%;
             margin: 1rem 0;
-            padding: 0.5rem;
 
             img {
                 width: 100%;
@@ -38,6 +34,18 @@
 
             h5 {
                 margin: 1rem auto;
+            }
+
+            p {
+                padding: 0.5rem 1rem;
+            }
+
+            &:hover {
+                box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            &:hover h5, &:hover p {
+                color: $fifth-color;
             }
         }
 
