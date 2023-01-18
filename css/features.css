@@ -12,9 +12,12 @@
   background-color: #FEFAE0;
   text-align: center;
   padding: 3rem; }
+  .features h1, .features h5 {
+    font-family: sans-serif; }
   .features p {
     color: gray;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    font-family: sans-serif; }
   .features > p {
     padding: 0 10rem; }
   .features .feature_description {

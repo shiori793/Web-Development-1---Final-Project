@@ -45,8 +45,7 @@ header {
 }
 
 .contact {
-  height: 100vh;
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
 }
 .contact h1 {
   text-align: center;
@@ -204,5 +203,4 @@ header {
 .contact .social-media-links i:hover {
   transform: scale(1.5, 1.5);
   transition: all 0.5s;
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

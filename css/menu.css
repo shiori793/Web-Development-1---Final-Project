@@ -12,9 +12,12 @@
   background-color: #E9EDC9;
   text-align: center;
   padding: 3rem; }
+  .menu h1, .menu h5 {
+    font-family: sans-serif; }
   .menu p {
     color: gray;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    font-family: sans-serif; }
   .menu .menu_cards {
     display: flex;
     flex-wrap: wrap;
