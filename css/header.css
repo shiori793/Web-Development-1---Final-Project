@@ -1,1 +1,50 @@
-:root{font-family:sans-serif;font-size:20px}@media screen and (max-width: 1007px){:root{font-size:18px}}@media screen and (max-width: 640px){:root{font-size:16px}}header{background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../image/header/mainVisual-matcha.jpg);max-width:100%;background-position:center;background-repeat:no-repeat;background-size:cover;height:35rem;padding:5rem;text-align:center;padding:15rem 0}header .navbar-dark{background-color:#ccd5ae}header .navbar-dark .navbar-brand{padding:0 0 .2rem 0}header .navbar-nav{text-align:left}#header-mainVisual .header-title{margin:0 auto 1.5rem auto;border-bottom:solid 1px #ccd5ae;width:40rem}#header-mainVisual .header-title h1{font-family:sans-serif;color:#fefae0;margin:0 0 .5em 0;letter-spacing:1.5rem}#header-mainVisual p{font-family:sans-serif;color:#fefae0}@media screen and (max-width: 1007px){.header-title{width:10px}.header-title h1{font-size:1.5rem}}@media screen and (max-width: 640px){.header-title h1{font-size:.3rem}}/*# sourceMappingURL=header.css.map */
+:root {
+  font-family: sans-serif;
+  font-size: 20px; }
+  @media screen and (max-width: 1007px) {
+    :root {
+      font-size: 18px; } }
+  @media screen and (max-width: 640px) {
+    :root {
+      font-size: 16px; } }
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/header/mainVisual-matcha.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  padding: 5rem;
+  text-align: center;
+  padding: 15rem 0; }
+  header .navbar-dark {
+    background-color: #CCD5AE; }
+    header .navbar-dark .navbar-brand {
+      padding: 0 0 0.2rem 0; }
+  header .navbar-nav {
+    text-align: left; }
+
+#header-mainVisual .header-title {
+  margin: 0 auto 1.5rem auto;
+  border-bottom: solid 1px #CCD5AE;
+  width: 40rem; }
+  #header-mainVisual .header-title h1 {
+    font-family: sans-serif;
+    color: #FEFAE0;
+    margin: 0 0 0.5em 0;
+    letter-spacing: 1.5rem; }
+
+#header-mainVisual p {
+  font-family: sans-serif;
+  color: #FEFAE0; }
+
+@media screen and (max-width: 1007px) {
+  .header-title {
+    width: 10px; }
+    .header-title h1 {
+      font-size: 1.5rem; } }
+
+@media screen and (max-width: 640px) {
+  .header-title h1 {
+    font-size: 0.3rem; } }
