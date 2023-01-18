@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/variables.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
         <link href="css/header.css" rel="stylesheet">
         <link href="./css/features.css" rel="stylesheet">
@@ -14,13 +15,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/review.css">
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="/js/review.js"></script>
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #CCD5AE;">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><i class="fa-solid fa-fan"></i></a>
+                    <a class="navbar-brand" href="#">
+                        <img src="image/header/nav-logo.png" alt="ume">
+                    </a>
                     <button 
                     class="navbar-toggler" 
                     type="button" 
@@ -56,10 +60,12 @@
 
 
             <div id="header-mainVisual">
-                <h1>WAGASHI</h1>
+                <div class="header-title">
+                    <h1>WAGASHI</h1>
+                </div>
                 <p>Magna dolore anim in consequat dolore nisi Lorem est quis veniam aute dolore sint sit.</p>
                 <button type="button" class="button">Read More</button>
-            </div>           
+            </div>      
         </header>
         <main>
             <div class="features" id="features">
