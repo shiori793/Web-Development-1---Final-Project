@@ -1,5 +1,8 @@
+@import "./variables.scss";
+
 .review{
-    background:#FEFAE0; 
+    // background:#FEFAE0; 
+    background-color: $secondary-color;
     .wrapper {
         text-align:center;
         padding: 70px 0;

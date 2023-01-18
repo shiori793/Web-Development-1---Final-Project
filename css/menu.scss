@@ -2,7 +2,8 @@
 
 .menu {
 
-    background-color: $secondary-color;
+    // background-color: $secondary-color;
+    background-color: $third-color;
     text-align: center;
     padding: 3rem;
 
@@ -40,7 +41,7 @@
             }
         }
 
-        @media screen and (max-width: $tablet-windows-size) {
+        @media screen and (max-width: $tablet-window-size) {
             .menu_half_width {
                 width: 50%;
             }

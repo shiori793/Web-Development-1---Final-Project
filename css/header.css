@@ -28,7 +28,7 @@ header {
 #header-mainVisual .header-title {
   margin: 0 auto 1.5rem auto;
   border-bottom: solid 1px #CCD5AE;
-  width: 40rem; }
+  width: 80%; }
   #header-mainVisual .header-title h1 {
     font-family: sans-serif;
     color: #FEFAE0;
