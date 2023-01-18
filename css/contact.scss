@@ -1,7 +1,9 @@
-@use './variables.scss' as v;
+// @use './variables.scss' as v;
+@import "./variables.scss";
 
 .contact {
     // height: 100vh;
+    background-color: $third-color;
     padding: 3rem 0 0 0;
     h1 {
         text-align: center;
@@ -11,7 +13,7 @@
         width: 100%;
         display: flex;
         padding: 0 3rem;
-        @media screen and (max-width: v.$tablet-windows-size) {
+        @media screen and (max-width: $tablet-window-size) {
             flex-direction: column;
         }
         form {
@@ -25,7 +27,7 @@
                 margin-bottom: 1.5rem;
                 white-space: nowrap;
                 &:hover {
-                    color: v.$primary-color;
+                    color: $primary-color;
                     transition: all 0.5s;
                 }
             }
@@ -35,11 +37,11 @@
                 border-bottom: solid 2px;
             }
             input:hover, textarea:hover {
-                border-bottom: solid 2px v.$primary-color;
+                border-bottom: solid 2px $primary-color;
             }
             input:focus, textarea:focus {
                 border-bottom: none;
-                outline: solid 2px v.$primary-color;
+                outline: solid 2px $primary-color;
                 border-radius: 5px;
             }
             i {
@@ -73,7 +75,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                @media screen and (max-width: v.$tablet-windows-size) {
+                @media screen and (max-width: $tablet-window-size) {
                     flex-direction: column;
                 }
                 &-item {
@@ -81,7 +83,7 @@
                     flex-direction: row;
                     align-items: center;
                     white-space: nowrap;
-                    @media screen and (max-width: v.$tablet-windows-size) {
+                    @media screen and (max-width: $tablet-window-size) {
                         margin-bottom: 1rem;
                     }
                     i {
@@ -91,14 +93,14 @@
                     p {
                         font-size: 0.7rem;
                         margin: 0 1rem 0 0.5rem;
-                        @media screen and (max-width: v.$tablet-windows-size) {
+                        @media screen and (max-width: $tablet-window-size) {
                             font-size: 1rem;
                         }
                     }
                 }
                 &-for-sp {
                     display: flex;
-                    @media screen and (max-width: v.$smartphone-window-size) {
+                    @media screen and (max-width: $smartphone-window-size) {
                         flex-direction: column;
                     }
                 }
@@ -108,7 +110,7 @@
                 iframe {
                     width: 100%;
                     height: 100%;
-                    @media screen and (max-width: v.$tablet-windows-size) {
+                    @media screen and (max-width: $tablet-window-size) {
                         height: 45vh;
                     }
                 }
@@ -120,25 +122,25 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: v.$primary-color;
-        @media screen and (max-width: v.$smartphone-window-size) {
+        background-color: $primary-color;
+        @media screen and (max-width: $smartphone-window-size) {
             flex-direction: column;
         }
         p {
-            color: v.$third-color;
+            color: $third-color;
             margin: 0;
         }
         &-links {
             width: 20vw;
             display: flex;
             justify-content: space-evenly;
-            @media screen and (max-width: v.$smartphone-window-size) {
+            @media screen and (max-width: $smartphone-window-size) {
                 width: 50vw;
             }
             i {
                 width: 1.5rem;
                 height: 1.5rem;
-                color: v.$third-color;
+                color: $third-color;
                 cursor: pointer;
                 &:hover {
                     transform: scale(1.5, 1.5);

@@ -2,7 +2,8 @@
 
 .features {
 
-    background-color: $third-color;
+    // background-color: $third-color;
+    background-color: $secondary-color;
     text-align: center;
     padding: 3rem;
 
@@ -46,7 +47,7 @@
         }
     }
 
-    @media screen and (max-width: $tablet-windows-size) {
+    @media screen and (max-width: $tablet-window-size) {
         p {
             font-size: 1rem;
         }

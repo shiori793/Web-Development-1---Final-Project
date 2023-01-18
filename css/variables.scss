@@ -7,7 +7,7 @@ $fourth-color: #FAEDCD;
 $fifth-color: #D4A373;
 $black-color: #000;
 $smartphone-window-size: 640px;
-$tablet-windows-size: 1007px;
+$tablet-window-size: 1007px;
 $laptop-font-size: 20px;
 $tablet-font-size: 18px;
 $smartphone-font-size: 16px;
@@ -15,7 +15,7 @@ $smartphone-font-size: 16px;
 :root {
     font-family: $secondary-font;
     font-size: $laptop-font-size;
-    @media screen and (max-width: $tablet-windows-size) {
+    @media screen and (max-width: $tablet-window-size) {
         font-size: $tablet-font-size;
     }
     @media screen and (max-width: $smartphone-window-size) {

@@ -25,7 +25,8 @@ header {
     .header-title{
       margin: 0 auto 1.5rem auto;
       border-bottom: solid 1px $primary-color;
-      width: 40rem;
+      // width: 40rem;
+      width: 80%;
       h1 {
         font-family: $primary-font;
         color: $third-color;
@@ -40,7 +41,7 @@ header {
 }
 
 
-@media screen and (max-width: $tablet-windows-size) {
+@media screen and (max-width: $tablet-window-size) {
   .header-title {
     width: 10px;
       h1 {
