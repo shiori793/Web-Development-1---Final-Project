@@ -465,8 +465,19 @@ header .navbar-nav {
   color: #CCD5AE;
   transition: all 0.5s;
 }
-.contact .contact-us form label:focus {
-  color: #CCD5AE;
+.contact .contact-us form input, .contact .contact-us form textarea {
+  width: calc(100% - 3rem);
+  border: none;
+  border-bottom: solid 2px;
+  background-color: #FEFAE0;
+}
+.contact .contact-us form input:hover, .contact .contact-us form textarea:hover {
+  border-bottom: solid 2px #CCD5AE;
+}
+.contact .contact-us form input:focus, .contact .contact-us form textarea:focus {
+  border-bottom: none;
+  outline: solid 2px #CCD5AE;
+  border-radius: 5px;
 }
 .contact .contact-us form i {
   width: 3rem;
