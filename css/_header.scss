@@ -8,12 +8,16 @@ header {
         padding: 0 0 0.2rem 0;
       }
   }
-  .navbar-light .navbar-toggler {
+  .navbar-dark .navbar-toggler {
     border-color: rgba(0, 0, 0, 0);
     outline: none;
   }
   
-  .navbar-light .navbar-toggler-icon {
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
     background-image: none;
   }
   
