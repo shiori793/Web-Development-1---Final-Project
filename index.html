@@ -54,6 +54,13 @@
                     </div>
                 </div>
             </nav>
+            <script>
+                $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
+                    if(this.id != 'navbarDropdown'){
+                    $('.navbar-collapse').collapse('hide');
+                    }
+                });
+            </script>
         </header>
         <div id="home">
             <div class="home-title">
