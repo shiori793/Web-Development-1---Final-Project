@@ -1,5 +1,8 @@
-$primary-font: sans-serif;
-$secondary-font: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+$primary-font: 'Zen Kurenaido', sans-serif;
+$secondary-font: 'Yuji Syuku', serif;
 $primary-color: #CCD5AE;
 $secondary-color: #E9EDC9;
 $third-color: #FEFAE0;
@@ -33,6 +36,7 @@ $secondary-font: 'Yuji Syuku';
     box-shadow: 0 0 10px rgba(0,0,0,.3);
     background-color: $primary-color;
     cursor: pointer;
+    font-family: $primary-font;
     &:hover {
         border: solid 3px $primary-color;
         color: $primary-color;

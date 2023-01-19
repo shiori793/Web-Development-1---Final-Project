@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
 :root {
-  font-family: "Yuji Syuku";
+  font-family: "Yuji Syuku", serif;
   font-size: 20px;
 }
 @media screen and (max-width: 1007px) {
@@ -13,7 +15,7 @@
   }
 }
 
-.contact .contact-us form button {
+.contact .contact-us form button, #home button {
   border: none;
   width: 8rem;
   height: 2rem;
@@ -21,39 +23,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: #CCD5AE;
   cursor: pointer;
+  font-family: "Zen Kurenaido", sans-serif;
 }
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
-  transition: all 0.5s;
-}
-
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
-}
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
-}
-.contact .contact-us form button:hover {
+.contact .contact-us form button:hover, #home button:hover {
   border: solid 3px #CCD5AE;
   color: #CCD5AE;
   background-color: #FEFAE0;
@@ -61,6 +33,68 @@
 }
 
 header {
+  font-family: "Yuji Syuku";
+}
+header .navbar-dark {
+  background-color: #CCD5AE;
+}
+header .navbar-dark .navbar-brand {
+  padding: 0 0 0.2rem 0;
+}
+header .navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+header .navbar-light .navbar-toggler-icon {
+  background-image: none;
+}
+header .navbar-toggler-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+header .navbar-toggler-icon,
+header .navbar-toggler-icon span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+header .navbar-toggler-icon span {
+  position: absolute;
+  left: 5px;
+  width: 80%;
+  height: 2px;
+  background-color: #FEFAE0;
+  border-radius: 1px;
+}
+header .navbar-toggler-icon span:nth-of-type(1) {
+  top: 8px;
+}
+header .navbar-toggler-icon span:nth-of-type(2) {
+  top: 20px;
+}
+header .navbar-toggler-icon span:nth-of-type(3) {
+  top: 32px;
+}
+header .navbar-toggler[aria-expanded=true] span.navbar-toggler-icon span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-315deg);
+}
+header .navbar-toggler[aria-expanded=true] span.navbar-toggler-icon span:nth-of-type(2) {
+  opacity: 0;
+}
+header .navbar-toggler[aria-expanded=true] span.navbar-toggler-icon span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(315deg);
+}
+header .navbar-nav {
+  text-align: left;
+}
+
+#home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/header/mainVisual-matcha.jpg);
   max-width: 100%;
   background-position: center;
@@ -71,76 +105,31 @@ header {
   text-align: center;
   padding: 15rem 0;
 }
-header .navbar-dark {
-  background-color: #CCD5AE;
-}
-header .navbar-dark .navbar-brand {
-  padding: 0 0 0.2rem 0;
-}
-header .navbar-nav {
-  text-align: left;
-}
-
-#header-mainVisual .header-title {
+#home .home-title {
   margin: 0 auto 1.5rem auto;
   border-bottom: solid 1px #CCD5AE;
   width: 80%;
 }
-#header-mainVisual .header-title h1 {
+#home .home-title h1 {
   font-family: "Zen Kurenaido";
   color: #FEFAE0;
   margin: 0 0 0.5em 0;
   letter-spacing: 1.5rem;
 }
-#header-mainVisual p {
+#home p {
   font-family: "Yuji Syuku";
   color: #FEFAE0;
+  margin: 0 auto;
+  padding: 0 2em 2em 2em;
 }
-
-@media screen and (max-width: 1007px) {
-  .header-title {
-    width: 10px;
-  }
-  .header-title h1 {
+@media screen and (max-width: 640px) {
+  #home .home-title h1 {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 640px) {
-  .header-title h1 {
-    font-size: 0.3rem;
+  #home .home-title p {
+    font-size: 0.8rem;
   }
 }
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
-}
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
-}
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
-  transition: all 0.5s;
-}
-
 .features {
   background-color: #E9EDC9;
   text-align: center;
@@ -149,13 +138,16 @@ header .navbar-nav {
 .features h1, .features h5 {
   font-family: "Zen Kurenaido";
 }
+.features h1 {
+  padding: 2rem 0;
+}
 .features p {
   color: gray;
   font-size: 0.8rem;
   font-family: "Yuji Syuku";
 }
 .features > p {
-  padding: 0 10rem;
+  padding: 2rem 10rem;
 }
 .features .feature_description {
   display: flex;
@@ -207,37 +199,48 @@ header .navbar-nav {
   }
 }
 
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
+.fade_up {
+  -webkit-animation-name: FadeUp;
+          animation-name: FadeUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+          animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
+
+.is_target {
+  opacity: 0;
+}
+
+@-webkit-keyframes FadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
   }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
+@keyframes FadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
-  transition: all 0.5s;
-}
-
 .menu {
   background-color: #FEFAE0;
   text-align: center;
@@ -245,6 +248,9 @@ header .navbar-nav {
 }
 .menu h1, .menu h5 {
   font-family: "Zen Kurenaido";
+}
+.menu h1 {
+  padding-top: 1.5rem;
 }
 .menu p {
   color: gray;
@@ -261,7 +267,6 @@ header .navbar-nav {
 .menu .menu_cards .menu_full_width, .menu .menu_cards .menu_half_width {
   width: 30%;
   margin: 1rem 0;
-  padding: 0.5rem;
 }
 .menu .menu_cards .menu_full_width img, .menu .menu_cards .menu_half_width img {
   width: 100%;
@@ -271,6 +276,15 @@ header .navbar-nav {
 }
 .menu .menu_cards .menu_full_width h5, .menu .menu_cards .menu_half_width h5 {
   margin: 1rem auto;
+}
+.menu .menu_cards .menu_full_width p, .menu .menu_cards .menu_half_width p {
+  padding: 0.5rem 1rem;
+}
+.menu .menu_cards .menu_full_width:hover, .menu .menu_cards .menu_half_width:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.menu .menu_cards .menu_full_width:hover h5, .menu .menu_cards .menu_full_width:hover p, .menu .menu_cards .menu_half_width:hover h5, .menu .menu_cards .menu_half_width:hover p {
+  color: #D4A373;
 }
 @media screen and (max-width: 1007px) {
   .menu .menu_cards .menu_half_width {
@@ -289,43 +303,19 @@ header .navbar-nav {
   }
 }
 
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
-}
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
-}
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
-  transition: all 0.5s;
-}
-
 .review {
   background-color: #E9EDC9;
+  font-family: "Yuji Syuku";
+}
+.review h1, .review h2 {
+  font-family: "Zen Kurenaido";
 }
 .review .wrapper {
   text-align: center;
   padding: 70px 0;
+}
+.review .wrapper h1 {
+  padding: 1rem;
 }
 
 #ticKer {
@@ -398,46 +388,18 @@ header .navbar-nav {
     max-width: 100%;
   }
 }
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
-}
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
-}
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
-  transition: all 0.5s;
-}
-
 .contact {
   font-family: "Yuji Syuku";
   background-color: #FEFAE0;
   padding: 3rem 0 0 0;
+  font-family: "Yuji Syuku";
 }
 .contact h1 {
   font-family: "Zen Kurenaido";
   text-align: center;
   align-items: center;
+  padding-top: 1rem;
+  font-family: "Zen Kurenaido";
 }
 .contact .contact-us {
   width: 100%;
@@ -465,19 +427,8 @@ header .navbar-nav {
   color: #CCD5AE;
   transition: all 0.5s;
 }
-.contact .contact-us form input, .contact .contact-us form textarea {
-  width: calc(100% - 3rem);
-  border: none;
-  border-bottom: solid 2px;
-  background-color: #FEFAE0;
-}
-.contact .contact-us form input:hover, .contact .contact-us form textarea:hover {
-  border-bottom: solid 2px #CCD5AE;
-}
-.contact .contact-us form input:focus, .contact .contact-us form textarea:focus {
-  border-bottom: none;
-  outline: solid 2px #CCD5AE;
-  border-radius: 5px;
+.contact .contact-us form label:focus {
+  color: #CCD5AE;
 }
 .contact .contact-us form i {
   width: 3rem;
@@ -644,37 +595,6 @@ header .navbar-nav {
 }
 .contact .social-media-links i:hover {
   transform: scale(1.5, 1.5);
-  transition: all 0.5s;
-}
-
-:root {
-  font-family: "Yuji Syuku";
-  font-size: 20px;
-}
-@media screen and (max-width: 1007px) {
-  :root {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 640px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-.contact .contact-us form button {
-  border: none;
-  width: 8rem;
-  height: 2rem;
-  color: #FEFAE0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: #CCD5AE;
-  cursor: pointer;
-}
-.contact .contact-us form button:hover {
-  border: solid 3px #CCD5AE;
-  color: #CCD5AE;
-  background-color: #FEFAE0;
   transition: all 0.5s;
 }
 

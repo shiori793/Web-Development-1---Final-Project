@@ -29,7 +29,11 @@
                     aria-controls="navbarNav" 
                     aria-expanded="false" 
                     aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
                 
                     <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
@@ -41,10 +45,10 @@
                                 <a class="nav-link active" href="#features">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#examples">Examples</a>
+                                <a class="nav-link active" href="#menu">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#gallery">Gallery</a>
+                                <a class="nav-link active" href="#review">Review</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="#contact">Contact</a>
@@ -53,16 +57,14 @@
                     </div>
                 </div>
             </nav>
-
-
-            <div id="header-mainVisual">
-                <div class="header-title">
-                    <h1>WAGASHI</h1>
-                </div>
-                <p>Magna dolore anim in consequat dolore nisi Lorem est quis veniam aute dolore sint sit.</p>
-                <button type="button" class="button">Read More</button>
-            </div>      
         </header>
+        <div id="home">
+            <div class="home-title">
+                <h1>WAGASHI</h1>
+            </div>
+            <p>Magna dolore anim in consequat dolore nisi Lorem est quis veniam aute dolore sint sit.</p>
+            <button type="button" class="button">Read More</button>
+        </div>      
         <main>
             <div class="features" id="features">
                 <h1>Our Features</h1>
@@ -84,6 +86,7 @@
                         <p>Veniam nostrud incididunt duis non sit consequat consectetur cillum velit. Magna aute tempor ut dolore adipisicing occaecat amet.</p>
                     </div>
                 </div>
+                <script src="./js/features.js" type="text/javascript"></script>
             </div>
             <div class="menu" id="menu">
                 <h1>Menu</h1>
@@ -120,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review">
+            <div id="review" class="review">
                 <div class="wrapper">
                     <h1>Review</h1>
                         <div id="ticKer">
@@ -280,9 +283,9 @@
                 <div class="footer_contact">
                     <h6>CONTACT</h6>
                     <ul>
-                        <li><i class="fa-solid fa-building"></i> 816 Granville St Vancouver, BC V6Z 1K3</li>
-                        <li><i class="fa-solid fa-envelope"></i> wagashi_cafe@info.com</li>
-                        <li><i class="fa-solid fa-phone-flip"></i> +01 234 567 89</li>
+                        <li><i class="fa-solid fa-building"></i><a href="https://goo.gl/maps/ZGNQhVdH36Z2nqm99" target="_blank"> 816 Granville St Vancouver, BC V6Z 1K3</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:wagashi_cafe@info.com"> wagashi_cafe@info.com</a></li>
+                        <li><i class="fa-solid fa-phone-flip"></i><a href="tel:23456789"> +01 234 567 89</a></li>
                         <li><i class="fa-solid fa-print"></i> +01 234 567 89</li>
                     </ul>
                 </div>
