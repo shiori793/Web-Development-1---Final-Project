@@ -1,13 +1,15 @@
-@import "./variables.scss";
-
 .menu {
 
-    background-color: $secondary-color;
+    background-color: $third-color;
     text-align: center;
     padding: 3rem;
 
     h1, h5 {
         font-family: $primary-font;
+
+    }
+    h1 {
+        padding-top: 1.5rem;
     }
 
     p {
@@ -27,7 +29,6 @@
             
             width: 30%;
             margin: 1rem 0;
-            padding: 0.5rem;
 
             img {
                 width: 100%;
@@ -38,9 +39,21 @@
             h5 {
                 margin: 1rem auto;
             }
+
+            p {
+                padding: 0.5rem 1rem;
+            }
+
+            &:hover {
+                box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            &:hover h5, &:hover p {
+                color: $fifth-color;
+            }
         }
 
-        @media screen and (max-width: $tablet-windows-size) {
+        @media screen and (max-width: $tablet-window-size) {
             .menu_half_width {
                 width: 50%;
             }
