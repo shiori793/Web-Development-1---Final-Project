@@ -14,83 +14,63 @@
     }
 }
 
-#ticKer{
-    position: relative; 
-    overflow: hidden; 
-    margin: 0 auto;
-    width: 100%;
-}
-#ticKer ul{
-    padding: 0; 
-    margin: 0 auto; 
-    display: flex;
-    flex-wrap: wrap;
-}
-#ticKer li{
-    list-style-type: none;
-    line-height:2.5em;
-    color: #000;
-    font-weight: 400;
-    font-size: 16px;
-    text-align:left;
-}
-
-#ulArea{
-    width: 100%;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    .review-img
-    {
-        flex: 0 0 50%;
-        max-width: 100%;
+.slider{
+    width:90%;
+    margin:0 auto;
+    padding: 3rem 0;
+    .review-part{
+        display: flex;
         img{
-            width: 90%;
+            width:50%;
+            margin: 0 25%;
+        }
+        p{
+            text-align: start;
+            width: 50%;
+            margin: 0 25%;
         }
     }
-    .review-comment
-    {
-        flex: 0 0 50%;
-        position: relative;
-        max-width: 100%;
-    }
+}
+.slider .slick-slide{
+    height:auto!important;
+}
+
+/* ------------------------------
+    loopSlider
+------------------------------ */
+.loopSliderWrap {
+	top: 0;
+	left: 0;
+	width: 100px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.loopSlider {
+	margin: 0 auto;
+	width: 100px;
+	height: 500px;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.loopSlider ul {
+	width: 100px;
+	overflow: hidden;
+}
+
+.loopSlider ul li {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
 }
 
 //tablet-windows-size
 @media screen and (max-width: 1007px){
-    .review-img
-    {
-        flex: 0 0 50%;
-        max-width: 60%;
-    }
-
-    .review-comment
-    {
-        flex: 0 0 50%;
-        position: relative;
-        max-width: 40%;
-    }
 }
 //smartphone-window-size
 @media screen and (max-width: 640px){
-    .review-img
-    {
-        flex: 0 0 50%;
-        max-width: 100%;
-        img{
-            width: 100%;
-        }
-    }
-
-    .review-comment
-    {
-        flex: 0 0 50%;
-        position: relative;
-        line-height: 1.4;
-        max-width: 100%;
-    }
 }
 
 
