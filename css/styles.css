@@ -159,7 +159,6 @@ header {
   animation-fill-mode: forwards; }
 
 .is_target {
-  opacity: 0;
   opacity: 0; }
 
 @keyframes FadeUp {
@@ -230,58 +229,46 @@ header {
 .slider {
   width: 90%;
   margin: 0 auto;
-  width: 100%; }
+  padding: 3rem 0; }
+  .slider .review-part {
+    display: flex; }
+    .slider .review-part img {
+      width: 50%;
+      margin: 0 25%; }
+    .slider .review-part p {
+      text-align: start;
+      width: 50%;
+      margin: 0 25%; }
 
-#ticKer ul {
-  padding: 0;
+.slider .slick-slide {
+  height: auto !important; }
+
+/* ------------------------------
+    loopSlider
+------------------------------ */
+.loopSliderWrap {
+  top: 0;
+  left: 0;
+  width: 100px;
+  overflow: hidden;
+  position: absolute; }
+
+.loopSlider {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap; }
+  width: 100px;
+  height: 500px;
+  text-align: left;
+  position: relative;
+  overflow: hidden; }
 
-#ticKer li {
-  list-style-type: none;
-  line-height: 2.5em;
-  color: #000;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: left; }
+.loopSlider ul {
+  width: 100px;
+  overflow: hidden; }
 
-#ulArea {
-  width: 100%; }
-
-.row {
-  display: flex;
-  flex-wrap: wrap; }
-  .row .review-img {
-    flex: 0 0 50%;
-    max-width: 100%; }
-    .row .review-img img {
-      width: 90%; }
-  .row .review-comment {
-    flex: 0 0 50%;
-    position: relative;
-    max-width: 100%; }
-
-@media screen and (max-width: 1007px) {
-  .review-img {
-    flex: 0 0 50%;
-    max-width: 60%; }
-  .review-comment {
-    flex: 0 0 50%;
-    position: relative;
-    max-width: 40%; } }
-
-@media screen and (max-width: 640px) {
-  .review-img {
-    flex: 0 0 50%;
-    max-width: 100%; }
-    .review-img img {
-      width: 100%; }
-  .review-comment {
-    flex: 0 0 50%;
-    position: relative;
-    line-height: 1.4;
-    max-width: 100%; } }
+.loopSlider ul li {
+  width: 100px;
+  height: 100px;
+  overflow: hidden; }
 
 .contact {
   font-family: "Yuji Syuku";
