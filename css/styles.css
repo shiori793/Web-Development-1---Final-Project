@@ -470,6 +470,5 @@ footer {
     background-color: #000;
     text-align: center;
     padding: 1rem 0; }
-    footer .copy_right p {
-      margin: 0;
+    footer .copy_right small {
       font-size: 0.8rem; }
