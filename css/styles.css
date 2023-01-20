@@ -159,6 +159,7 @@ header {
   animation-fill-mode: forwards; }
 
 .is_target {
+  opacity: 0;
   opacity: 0; }
 
 @keyframes FadeUp {
@@ -226,9 +227,8 @@ header {
     .review .wrapper h1 {
       padding: 1rem; }
 
-#ticKer {
-  position: relative;
-  overflow: hidden;
+.slider {
+  width: 90%;
   margin: 0 auto;
   width: 100%; }
 
